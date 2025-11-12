@@ -317,6 +317,63 @@ nav {
       margin-top: 60px;
       letter-spacing: 1px;
     }
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .welcome-center {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    height: 70vh;
+    background-size: cover;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .product-card img {
+    height: auto;
+  }
+
+  .products h2 {
+    font-size: 2rem;
+  }
+
+  .about, .contact {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px 10px;
+  }
+}
+
   </style>
 </head>
 <body>
