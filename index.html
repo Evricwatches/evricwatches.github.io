@@ -373,6 +373,39 @@ nav {
     padding: 15px 10px;
   }
 }
+footer {
+  background: #111;
+  color: #666040;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+  margin-top: 60px;
+  letter-spacing: 1px;
+}
+
+/* Privacy Policy Button */
+.privacy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background: #d4af37;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 12px rgba(212, 175, 55, 0.4);
+}
+
+.privacy-btn:hover {
+    background: #f0d56b;
+    box-shadow: 0 8px 18px rgba(240, 213, 107, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
 
   </style>
 </head>
@@ -413,7 +446,8 @@ nav {
       <div class="product-info">
         <div class="product-name">EVRIC ROYAL GOLD</div>
         <div class="product-desc"> Rolex Watch Golden colour Swiss made.</div>
-        <p class="price">
+       
+<p class="price">
   <span style="text-decoration: line-through; color: gray;">
     Rs. 4500
   </span>
@@ -471,10 +505,12 @@ nav {
       <button type="submit" class="btn-primary" style="align-self: center; max-width: 200px;">Send Message</button>
     </form>
   </section>
+<footer>
+  <p>&copy; 2026 EVRIC Watches. All Rights Reserved.</p>
 
-  <footer>
-    &copy; 2025 EVRIC Watches. All Rights Reserved.
-  </footer>
+  <a href="privacy.html" class="privacy-btn">Privacy Policy</a>
+</footer>
+
 <a
   href="https://wa.me/923212292015"
   class="whatsapp-float"
