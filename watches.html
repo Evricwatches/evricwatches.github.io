@@ -4,11 +4,6 @@
 <link rel="icon" type="image/png" sizes="512x512" href="eve.png">
 <link rel="icon" type="image/png" sizes="192x192" href="eve.png">
 <link rel="apple-touch-icon" href="eve.png">
-
-<p style="text-align:center; margin-top:50px;">
-  <a href="index.html" style="color:#d4af37; text-decoration:none;">← Back to Home</a>
-</p>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EVRIC Watches Collection</title>
@@ -16,6 +11,8 @@
   <style>
     body { background:#0a0a0a; color:#d4af37; font-family:Georgia,serif; }
     h1 { text-align:center; margin-top:50px; letter-spacing:3px; }
+    .back-link { text-align:center; margin-top:20px; }
+    .back-link a { color:#d4af37; text-decoration:none; }
     .product-grid {
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -30,12 +27,16 @@
       border-radius:15px;
       overflow:hidden;
       box-shadow:0 6px 12px rgba(212,175,55,0.3);
+      text-decoration:none;
+      color:inherit;
+      display:block;
     }
     .product-card img { width:100%; height:280px; object-fit:cover; }
     .product-info { padding:20px; }
     .product-name { font-size:1.3rem; font-weight:600; margin-bottom:10px; }
     .product-desc { color:#e6d894; margin-bottom:15px; }
     .product-price { font-size:1.2rem; font-weight:700; color:#d4af37; }
+    .price span { display:inline-block; }
     a.whatsapp-btn {
       display:inline-block; margin-top:15px; padding:10px 25px;
       background:#25D366; color:#000; border-radius:30px; text-decoration:none; font-weight:700;
@@ -43,29 +44,51 @@
   </style>
 </head>
 <body>
+
+  <p class="back-link">
+    <a href="index.html">← Back to Home</a>
+  </p>
+
   <h1>Our Watch Collection</h1>
+
   <div class="product-grid">
-<a href="Royal Gold.html" style="text-decoration:none; color:inherit;">
+
+    <!-- Card 1 -->
     <div class="product-card">
-      <img src="watch.jpeg" alt="Royal Gold">
-      <div class="product-info">
-        <div class="product-name">EVRIC ROYAL GOLD</div>
-        <div class="product-desc"> Rolex Watch Golden colour Swiss made.</div>
-        <p class="price">
-  <span style="text-decoration: line-through; color: gray;">
-    Rs. 4500
-  </span>
-  <span style="color: gold; font-weight: bold; margin-left: 10px;">
-    Rs. 3999
-  </span>
-</p>
+      <a href="transs.html" style="text-decoration:none; color:inherit;">
+        <img src="trans.jpeg" alt="Glass Back">
+        <div class="product-info">
+          <div class="product-name">EVRIC GLASS BACK</div>
+          <div class="product-desc">Royal Antique Watch with glass Back.</div>
+          <div class="product-price">Rs 3800</div>
+        </div>
+      </a>
+      <div class="product-info" style="padding-top:0;">
+        <a class="whatsapp-btn" href="https://wa.me/923212292015?text=Hi%20EVRIC%2C%20I'm%20interested%20in%20EVRIC%20Glass.">Chat to Order</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <a href="Royal Gold.html" style="text-decoration:none; color:inherit;">
+        <img src="watch.jpeg" alt="Royal Gold">
+        <div class="product-info">
+          <div class="product-name">EVRIC ROYAL GOLD</div>
+          <div class="product-desc">Rolex Watch Golden colour Swiss made.</div>
+          <p class="price">
+            <span style="text-decoration: line-through; color: gray;">Rs. 4500</span>
+            <span style="color: gold; font-weight: bold; margin-left: 10px;">Rs. 3999</span>
+          </p>
+        </div>
+      </a>
+      <div class="product-info" style="padding-top:0;">
         <a class="whatsapp-btn" href="https://wa.me/923212292015?text=Hi%20EVRIC%2C%20I'm%20interested%20in%20EVRIC%20Prime.">Chat to Order</a>
       </div>
-
     </div>
-    <!-- Duplicate more product-card blocks here -->
 
+    <!-- Add more product-card blocks here, following the same pattern -->
 
   </div>
+
 </body>
 </html>
